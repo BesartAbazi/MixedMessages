@@ -1,3 +1,5 @@
+import { getName } from "./getName.js";
+
 const getMixedMessages = () => {
     const messages = [
         'Hallo',
@@ -7,7 +9,7 @@ const getMixedMessages = () => {
         'Hey'
     ];
 
-    return messages[Math.floor(Math.random() * messages.length)];
+    return `${messages[Math.floor(Math.random() * messages.length)]} ${getName()}`;
 }
 
 console.log(getMixedMessages());
